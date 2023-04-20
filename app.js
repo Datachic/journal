@@ -15,6 +15,7 @@ const MongoStore = require('connect-mongo');
 const app = express();
 
 app.set('view engine', 'ejs');
+mongoose.set('strictQuery', true);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static("public"));
@@ -35,19 +36,19 @@ app.use(session({
     }
 ))
 
-mongoose.connect(url, ()=>{console.log("database connected!!!")})
+// mongoose.connect(url, ()=>{console.log("database connected!!!")})
 
 // 👇 (2) initalize passport, use it and use it to manage sessions.
 app.use(passport.initialize());
 app.use(passport.session());
 
 // 👇 database connection begin
- /* mongoose.connect
+  mongoose.connect
     ("mongodb+srv://adminAdmin:test123@cluster0.cxrlb.mongodb.net/Journaldb")
         .then((res)=>{
           console.log(" We're now connected to Journaldb mongoDB database!")
         })
-  */
+  
 
 const userSchema = new mongoose.Schema ({ // ...db for local & google sign on
   email: String,
