@@ -1,0 +1,43 @@
+
+<%- include('partials/header') -%>
+<div class="sBody">  
+   <div class="bodyContain">
+       <div class="banner" src="" alt="some banner"></div>
+           <div class="input frst">
+              <h1 class="headn">Hello, <%=usr%></h1>
+              <p> <%= title %><a href="" 
+                 style="color:#079e8f;"> 
+                <div class=""></div>...read more</a> 
+              </p>
+           </div>
+      
+            <% post.forEach(function(post){ %>
+               <div class="input">
+               <h1 class="headn"><%= post.title %></h1>
+               <p></p>
+               <p><%= post.post.substring(0,150) %>
+                 <p></p>
+                  <a class="nav-link ff" 
+                    href="/post/<%= post.title %>" 
+                    style="color:#079e8f; display:inline" 
+                    name =<%=post._id %> >...read more
+                   </a> 
+                   <a href="/edit/<%= post.title %>" 
+                       style="color:#079e8f; ">
+                       ...edit
+                    </a>
+                 </p>
+               </div>
+               <%})%>
+               
+    </div> <!-- bodyContain end --> 
+       
+             
+
+          
+<%- include("partials/footer" ); -%>
+
+
+
+
+

@@ -1,0 +1,64 @@
+<%- include('partials/headerX') %>
+
+<div class="sBody">  
+  <div class="bodyContain">  
+   <div class="compose1">  
+
+ <div class="container mt-5">
+  <h1>Login</h1>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark">Login</button>
+            <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <a class="btn btn-social btn-google" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Google Sign-In  
+          </a>
+        </div>
+        <div class="card-body">
+          <a class="btn btn-social btn-facebook" href="/auth/facebook" role="button">
+            <i class="fab fa-facebook"></i>
+            Facebook Sign-In 
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div><!-- compose1 end --> 
+    
+</div> <!-- bodyContain end --> 
+
+<section id="feats" style="display:block;">
+  <div class="row">
+  
+  </div>
+  
+</section>
+
+
+<%- include('partials/footer') %>

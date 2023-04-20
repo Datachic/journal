@@ -1,0 +1,35 @@
+<%- include("partials/header1"); -%>
+
+<div class="sBody">
+  <div class="bodyContain">
+    <div class="compose1">  
+    <h1>Compose</h1>
+    <form class="" action="/editn" method="post">
+      <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" type="text" 
+        name="pTitle" value = <%= title %> />
+        <label>Post</label>
+        <textarea class="form-control" name="pBody"
+         rows="5" cols="30" value = "<%= post %>" ><%= post %></textarea>
+      </div>
+      <button class="btn btn1 btn-primary" type="submit" name="button">Edit</button>
+    </form>
+    
+    <form class="" action="/delete" method="post">
+      <input type="hidden" name="bot1"
+             value="<%= post%>">
+      <button 
+       type="submit" class="btn btn2 btn-primary"
+              name="bot" value="<%= title %>">
+              Delete</button>
+      <a type="submit" class="btn btn2 btn-primary"
+              name="bot" href="/home">
+              Back</a>
+    </form>
+    
+     </div>
+   </div><!-- compose1 end --> 
+  <!-- end of bodycontain-->       
+
+<%- include("partials/footer"); -%>

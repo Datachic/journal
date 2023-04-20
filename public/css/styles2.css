@@ -1,0 +1,218 @@
+.navB, .barnav {
+  display: none !important;
+}
+
+button.btn.btn2{
+display: inline;
+margin-left: 5%;
+position: relative;
+left: 22%;
+bottom: 19px;
+}
+button.btn.btn1 {
+display: inline;
+position: relative;
+left: 2%;
+bottom: -19px;
+}
+
+.container {
+width: 100%;
+padding-right: 0;
+padding-left: 0;
+margin-right: auto;
+margin-left: -15%;
+}
+  
+.card{
+margin-top: 1%;
+}
+
+.col-sm-4 .card-body{
+padding: 0.2rem;
+}
+
+.contr{
+padding: 10px;
+}
+
+.jumbotron {
+padding: 0.1rem 2rem;
+margin-bottom: 1rem;
+background-color: #ffffff;
+border-radius: .3rem;
+}
+
+.bodyContain {
+padding: 1% 5% 5% 4%;
+}
+
+svg.fa-key{
+display: block !important;
+margin:auto;
+padding-bottom: 3%;
+font-size: 6rem;
+}
+
+.compose1 {
+margin: 17% 0 0 0 !important;
+}
+
+.display-3 {
+display: block;
+font-size: 3.5rem;
+font-weight: 300;
+line-height: 1.2;
+text-align: center;
+}
+
+.lead {
+ margin-top: 0.5rem;
+ font-size: 1.3rem !important;
+ font-weight: 300;
+}
+
+.btnCont{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+
+@media (max-width: 575px) {
+.compose1{
+margin: 24% 0 0 0!important;
+padding: 10px;
+}
+.navB, .barnav{
+  display: none !important;
+} 
+.mt-5 h1 {
+font-size: 1.8rem;
+margin-left: 3%;
+}
+.container {
+margin-left: -4%;
+} 
+.row {
+flex-direction: column !important;
+}
+
+.contr{
+padding: 10px
+;
+}
+.jumbotron {
+padding: 2rem 1rem;
+margin-bottom: 2rem;
+background-color: #d1eee7;
+border-radius: .8rem;
+}
+.display-3 {
+display: inline;
+font-size: 2rem;
+font-weight: 300;
+line-height: 1.2;
+}
+
+.lead {
+ margin-top: 0.5rem;
+ font-size: 1rem;
+ font-weight: 300;
+}
+}
+
+@media (min-width:576px) and (max-width:767px) {
+.navB, .barnav {
+  display: none !important;
+}
+
+.row {
+flex-direction: row !important;
+}
+.mt-5 h1 {
+font-size: 2rem;
+margin-left: 3%;
+}
+
+.container {
+margin-left: -4%;
+} 
+
+.compose1{
+margin: 24% 0 0 0!important;
+}
+
+.jumbotron {
+padding: 0.5rem 2rem;
+margin-bottom: 2rem;
+}
+
+.display-3 {
+display: inline;
+font-size: 3rem;
+text-align: center;
+}
+
+.lead {
+ margin-top: 0.5rem;
+ font-size: 1.1rem;
+}
+
+}
+
+@media (min-width:768px) and (max-width:991.99px) {
+.navB{
+  display: none;
+}
+.barnav {
+display: none;
+}
+
+.row {
+flex-direction: row !important;
+}
+
+.col-sm-4 {
+-ms-flex: 0 0 33.333333%;
+flex: 0 0 33.333333%;
+max-width: 52.333333%;
+}
+
+.compose1 {
+margin: 18.5% 0 0 1% !important;
+}
+
+
+.jumbotron {
+padding: 0.5rem 2rem;
+margin-bottom: 2rem;
+}
+
+.display-3 {
+display: inline;
+font-size: 3.rem;
+}
+
+.lead {
+ margin-top: 0.5rem;
+ font-size: 1.2rem;
+}
+}
+
+@media (min-width: 992) and (max-width:1200px) {
+.navB, .barnav {
+  display: none;
+}
+.compose1{
+margin: 12% 0 0 0% !important;
+}
+.row {
+flex-direction: row !important;
+}
+
+.col-sm-4 {
+-ms-flex: 0 0 33.333333%;
+flex: 0 0 33.333333%;
+max-width: 52.333333%;
+}

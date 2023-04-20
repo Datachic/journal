@@ -1,0 +1,36 @@
+<%- include('partials/header1') -%>
+
+<div class="sBody">  
+  <div class="bodyContain">
+    
+  <div class="compose1">  
+
+    <h1 class="headn">Compose <%=usr%></h1>
+          <p></p>
+          <input type="hidden" name="usr" value="<%= usr %>">
+        <form class="" action="/compose" method="post">
+           <div class="form-group">
+              <label class="xxx">Title</label>
+                  <input class="form-control" type="text" name="title" >
+              <label class="xxx">Post</label>
+                   <textarea rows="5" cols="40" class="form-control" name="post"></textarea>
+             </div>
+           <button  type="submit" name="button" class="btn btn-primary" > Publish</button>
+          <button  type="submit" class="btn btn-primary" name="bot" onclick=''>Back</button>
+  
+        </form>
+        
+          <script>
+            function myFunction() {
+            open("/about")
+            }
+            </script>
+          <p></p>
+        
+    </div><!-- compose1 end --> 
+  </div> <!-- bodyContain end --> 
+
+<%- include('partials/footer') -%>
+
+
+
